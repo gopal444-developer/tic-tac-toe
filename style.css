@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn-div {
+    display: flex;
+    gap: 5px;
+    border: 1px solid;
+    width: 40%;
+    height: 50%;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px;
+    padding: 0px 5px;
+}
+
+.turn1 {
+    color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.b-s {
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3), -3px -3px 5px rgb(0, 0, 0, 0.3);
+}
+
+.turn2 {
+    color: cyan;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    max-width: 25rem;
+    height: 80vh;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 6px 5px rgb(0, 0, 0, 0.3), -6px -6px 5px rgb(0, 0, 0, 0.3);
+    position: relative;
+    background-color: rgba(38, 39, 44, 0.8);
+}
+
+.btnContainer {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap: 4px;
+}
+
+.btnContainer .btn {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 5px rgb(0, 0, 0, 0.3), -6px -6px 5px rgb(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all linear 0.3s;
+    /* background-color: rgb(255, 255, 255); */
+
+    border: none;
+    text-shadow: 1px 1px 3px;
+    /* border: 2px solid; */
+    background: transparent;
+}
+
+.btn:hover {
+    box-shadow: inset 6px 6px 5px rgba(249, 245, 245, 0.3), inset -6px -6px 5px rgba(249, 245, 245, 0.3);
+}
+
+.btn:active {
+    scale: calc(0.9);
+    box-shadow: inset 6px 6px 5px rgba(249, 245, 245, 0.3), inset -6px -6px 5px rgba(249, 245, 245, 0.3);
+}
+
+.box1 {
+    border-radius: 10px 0px 0px 0px;
+}
+
+.box3 {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.box7 {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.box9 {
+    border-radius: 0px 0px 10px 0px;
+}
+
+.lower {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lower h1 {
+    text-shadow: 1px 1px 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 18px;
+    border: 1px solid white;
+    color: white;
+}
+
+.restratBtn {
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: rgba(38, 39, 44, 0.8);
+    font-weight: bold;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    position: absolute;
+    bottom: 10px;
+}
+
+.restratBtn:active {
+    scale: calc(0.9);
+}
+
+.hide {
+    display: none;
+}
