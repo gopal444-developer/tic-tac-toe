@@ -1,40 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
     <title>Tic-Tac-Toe</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- =========================
+            Main Game Container
+    ========================== -->
     <div class="container">
+
+        <!-- =========================
+                Turn Indicator
+        ========================== -->
         <div class="upper">
-            <div class="turn-div ">
-                <div class="turn1 b-s">X</div>
-                <div class="turn2">O</div>
+
+            <div class="turn-div">
+
+                <!-- Player X -->
+                <div class="turn turn1 b-s white">
+                    X
+                </div>
+
+                <!-- Player O -->
+                <div class="turn turn2">
+                    O
+                </div>
+
             </div>
 
         </div>
+
+
+        <!-- =========================
+                Game Board
+        ========================== -->
         <div class="btnContainer">
+
             <button class="btn box1"></button>
             <button class="btn box2"></button>
             <button class="btn box3"></button>
+
             <button class="btn box4"></button>
             <button class="btn box5"></button>
             <button class="btn box6"></button>
+
             <button class="btn box7"></button>
             <button class="btn box8"></button>
             <button class="btn box9"></button>
+
         </div>
+
+
+        <!-- =========================
+                Winner Message
+        ========================== -->
         <div class="lower hide">
-            <h1>Winner is - <Span class="win"></Span></h1>
+
+            <h1>
+                Winner is
+                <span class="win"></span>
+            </h1>
+
         </div>
-        <button class="restratBtn">Reset</button>
+
+
+        <!-- =========================
+                Control Buttons
+        ========================== -->
+        <div class="btnDiv">
+
+            <button class="restratBtn rnBtn">
+                Reset
+            </button>
+
+            <button class="newGameBtn rnBtn">
+                New Game
+            </button>
+
+        </div>
+
     </div>
 
+    <!-- External JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
